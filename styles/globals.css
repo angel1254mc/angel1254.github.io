@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+}
+body {
+    background-color: #16161d;
+    font-family: 'Poppins', 'sans-serif';
+}
+.none {
+    background: #16161d;
+}
+.navbar2 {
+    background-color: #100c08;
+}
+.hero {
+    margin-top: 4rem;
+    background-image: url("../public/Castle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    border-radius: 1rem;
+    border: 2px white solid;
+    padding: 30px;
+    color:white;
+    font-size: 1.5rem;
+    transition: 500ms;
+}
+
+#projects-button:hover {
+    transform: scale(1.05);
+    background-color:#50c878;
+    text-decoration: underline 1px white;
+    cursor:pointer;
+    
+}
+.projectCardPicture {
+    position: relative;
+    transition: 200ms;
+    z-index: 10;
+}
+.projectCardBody {
+    opacity: 1;
+    transition: 1s;
+    position: relative;
+}
+
+
+#projectCard:hover .projectCardBody{
+    top: 0px;
+}
+#projectCard:hover .projectCardPicture {
+    border-radius: 25px 25px 0 0;
+}
+
+.leader-lg {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:300;
+}
+.leader2-lg {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:100;
+}
