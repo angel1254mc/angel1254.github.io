@@ -7,7 +7,7 @@ let NavBar2 = ({ Component, pageProps }) => {
    
 
     return (
-        <nav className=" navbar2 w-44 flex h-full fixed flex-col justify-start items-start p-6">
+        <nav className=" navbar2 hidden 4xl:flex w-44 h-full fixed flex-col z-10 justify-start items-start p-6">
             <div className="flex text-white">
                 <span className="font-semibold text-2xl"><Image src={Angel} alt="Logo" width = "300px" height= "300px"></Image></span>
             </div>

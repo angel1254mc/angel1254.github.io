@@ -6,6 +6,16 @@ let ProjectCard= ({data}) => {
 
     return (
         <div id="projectCard" className="flex md:w-full align-center justify-center sm:align-left sm:justify-left">
+            <div className="projectCardPicture h-96 w-96 flex-none bg-cover rounded-t-3xl lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{backgroundImage:  `url("`+data.url}+`")`} title="project image">
+            </div>
+        </div>
+    );
+}
+
+export default ProjectCard
+
+/**
+ * <div id="projectCard" className="flex md:w-full align-center justify-center sm:align-left sm:justify-left">
            <div className="md:flex w-full p-3">
             <div className="projectCardPicture h-96 w-96 flex-none bg-cover rounded-t-3xl lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style={{backgroundImage:  `url("https://developer.apple.com/design/human-interface-guidelines/macos/images/app-icon-macos-mail_2x.png")`}} title="project image">
             </div>
@@ -24,7 +34,4 @@ let ProjectCard= ({data}) => {
                 </div>
             </div>
         </div>
-    );
-}
-
-export default ProjectCard
+ */
