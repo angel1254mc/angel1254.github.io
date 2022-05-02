@@ -42,21 +42,34 @@ body {
 }
 .projectCardPicture {
     position: relative;
-    transition: 200ms;
+    transition:600ms;
     z-index: 10;
 }
+
+.p-color-overlay {
+    opacity:0.5;
+    transition: 0.2s;
+}
 .projectCardBody {
-    opacity: 1;
-    transition: 1s;
-    position: relative;
+    transition: 0.5s;
+}
+#projectCard {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-size: 100%;
+    background-position-y:50%;
+    background-repeat:no-repeat;
 }
 
-
-#projectCard:hover .projectCardBody{
-    top: 0px;
+#projectCard:hover .p-color-overlay{
+    opacity: 1;
 }
 #projectCard:hover .projectCardPicture {
-    border-radius: 25px 25px 0 0;
+    border-radius: 25px 25px 25px 25px;
+    transform: translateX(-30vw);
+}
+#projectCard:hover .projectCardBody {
+    opacity: 1;
 }
 
 .leader-lg {
@@ -82,6 +95,46 @@ body {
     animation-fill-mode: forwards;
 }
 
+.leader-descriptor {
+    opacity: 0;
+    animation: Fadein 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:300;
+}
+
+.leader-lg-card {
+    opacity: 0;
+    animation: Fadein 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:500;
+}
+.leader2-lg-card {
+    opacity: 0;
+    animation: Fadein 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:100;
+}
+.leader-subtitle-card {
+    opacity: 0;
+    animation: Fadein 0.4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.leader-descriptor-card {
+    opacity: 0;
+    animation: Fadein 0.3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight:300;
+}
 .hero-container {
     background: transparent;
     overflow-x:auto
@@ -160,6 +213,14 @@ body {
     background-color: rebeccapurple;
 }
 
+.projlink {
+    color: white;
+    transition: 0.4s;
+}
+.projlink:hover {
+    color: #4078c0;
+}
+
 @keyframes growpoprot {
     from {
         transform: scale(0%) rotate(-60deg);
@@ -202,3 +263,32 @@ body {
         transform: rotate(360deg);
     }
 }
+@media screen and (min-width: 768px) {
+    .custom-fa-size {
+        font-size:3rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .custom-fa-size {
+        font-size:5rem;
+    }
+  }
+
+  /* Scrollbar inspiration from https://dev.to/xtrp/how-to-create-a-beautiful-custom-scrollbar-for-your-site-in-plain-css-1mjg */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:lightslategray;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+    transition: 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ivory;
+  }
