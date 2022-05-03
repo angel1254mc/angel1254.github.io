@@ -17,7 +17,8 @@ const getGithub = (name) => {
 }
 let Author = ({classname, link, id, end}) => {
     return (
-        <h4 className = {classname}><Link href={"" + getGithub(id)}>
+        <h4 className = {classname}>
+            <Link href={getGithub(id)}>
                 <a>
                     {
                         (end == 1) ? "and " + id :
@@ -37,9 +38,9 @@ let GetAuthors = ({authorsarray, proj}) => {
             {
                 authorsarray.map((el, index) => {
                     return (
-                        (index == size-1) && (index != 0) ? <Author link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {1}></Author> :
-                            (size == 1) ? <Author link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {-1}></Author> :
-                            <Author link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {0}></Author>
+                        (index == size-1) && (index != 0) ? <Author key = {el} link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {1}></Author> :
+                            (size == 1) ? <Author key = {el}  link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {-1}></Author> :
+                            <Author key = {el}  link = {getGithub(el)} classname = "mr-4 projlink" id = {el} end = {0}></Author>
                         )
 
                 })

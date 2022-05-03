@@ -14,7 +14,7 @@ import github from '../public/icongithub.svg';
 import {collection, addDoc, getDocs, doc, docs}  from 'firebase/firestore';
 let Hero = () => {
    
-    const dbInstance = collection(database, 'something');
+   /**  const dbInstance = collection(database, 'something');
     const saveNote = () => {
         addDoc(dbInstance, {
             noteTitle: 'Balls'
@@ -25,7 +25,7 @@ let Hero = () => {
         if (docs) {
             console.log(docs.docs[0].data());
         }
-    });
+    });*/
     return ( 
         <div className = "hero-container w-full flex justify-center">
             <div className = "yellow top-[20%] left-[45%] sm:left-[60%] sm:top-[6%] w-[20rem] sm:w-[40rem] h-min absolute">

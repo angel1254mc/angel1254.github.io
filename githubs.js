@@ -2,7 +2,7 @@ export const authorgithubs = {
     Angel: "https://github.com/angel1254mc",
     Jenna: "https://github.com/jennasheldo",
     Shehzad: "https://github.com/shehzad02",
-    Jorge: "../",
+    Jorge: "/",
     Jeya: "https://github.com/JeyaI",
     Juan: "https://github.com/juanrodl",
 }
