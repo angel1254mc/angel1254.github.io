@@ -292,3 +292,59 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background-color: ivory;
   }
+  .picture-circle {
+      background-size:cover;
+      background-image:none;
+      background-position: center;
+      animation: 1s colorIn 10s;
+      animation-fill-mode: forwards;
+  }
+  #hero-content {
+      transition: 1s;
+  }
+  #picture-circle-overlay {
+     transition: 1s;
+     opacity: 1;
+     animation: 1s FadeOut 0.2s ;
+     animation-fill-mode: forwards;
+  }
+  #picture-circle-overlay:hover {
+      opacity:0;
+  }
+
+  @keyframes colorIn {
+      from {
+        transform:scale(0);
+      }
+      to {
+        transform:scale(1);
+      }
+  }
+
+  @keyframes colorSwitch {
+      0% {
+          background-color: white;
+      }
+      25% {
+          background-color: #DF2935;
+      }
+      50% {
+          background-color: #3772FF;
+      }
+      75% {
+          background-color: #F1C21B;
+      }
+      100% {
+          background-color:white;
+      }
+  }
+
+  @keyframes FadeOut {
+      from {
+          transform: scale(1);
+      }
+      to {
+          transform:scale(0);
+          opacity:0;
+      }
+  }
