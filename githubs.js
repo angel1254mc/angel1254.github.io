@@ -10,11 +10,14 @@ export const authorgithubs = {
 export const projectgithubs = [
     "https://github.com/juanrodl/cen3031_proj",
     "https://github.com/angel1254mc/TweetTeam-DegreesOfSeparation",
+    "https://github.com/angel1254mc/angel1254.github.io",
     "https://github.com/angel1254mc/Angel-Minesweeper-2020"
+    
 ];
 
 export const projectyoutubes = [
     "https://www.youtube.com/watch?v=ylNqeFikgsM",
     "https://www.youtube.com/watch?v=J7PTDxnYY5Y&t=113s",
+    "none",
     "none"
 ]

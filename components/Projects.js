@@ -16,6 +16,7 @@ let Projects = ({ Component, pageProps }) => {
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[0]}></ProjectCard></div>
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[1]}></ProjectCard></div>
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[2]}></ProjectCard></div>
+                <div className = "flex justify-center align-center"><ProjectCard data = {projects[3]}></ProjectCard></div>
                 
             </div>
         </div>

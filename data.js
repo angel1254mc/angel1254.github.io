@@ -19,6 +19,16 @@ export const projects = [
         index: 1
     },
     {
+        name: "Portfolio Website",
+        desc: "A small, modern portfolio website built on a mix of NEXTJS, React, TailwindCSS, and, in the future, Firebase! Deployed on Netlify",
+        authors: ["Angel"],
+        date: "5/2/2022",
+        url: "https://i.imgur.com/k8yFK4K.png",
+        bg: "https://i.imgur.com/nFJT26i.png",
+        bgcolor: "#353935",
+        index:2
+    },
+    {
         name: "Minesweeper Replica",
         desc: "C++ Application that uses SFML to display a fully-functioning minesweeper replica. Able to read existing boards and generate new ones",
         authors: ["Angel"],
@@ -26,9 +36,6 @@ export const projects = [
         url: "https://i.imgur.com/qvwoguP.png",
         bg: "https://i.imgur.com/1xjdmKY.png",
         bgcolor:"#353935",
-        index: 2
-    },
-    {
-
+        index: 3
     }
 ]
