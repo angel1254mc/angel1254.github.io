@@ -1,6 +1,4 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
-import {Link} from "react-scroll";
 import {app, database} from '../firebaseConfig';
 import yellow from '../public/Yellow.svg';
 import Image from 'next/image';
