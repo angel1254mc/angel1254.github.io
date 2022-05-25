@@ -10,13 +10,33 @@ export const projects = [
         index: 0
     },
     {
+        name: "Voxel-Jump",
+        desc: "Fun Doodle Jump-esque platformer built on NextJS, React (UI), HTMLCanvas (gameplay), and socketio (Room-based multiplayer).",
+        authors: ["Angel"],
+        date: "May 5th 2022 - Present",
+        url: "https://i.imgur.com/X72H6zr.png",
+        bg: "https://i.imgur.com/kJ7vFIU.png",
+        bgcolor:"#ed779a",
+        index:1
+    },
+    {
         name: "Degrees of Separation Finder",
         desc: "Command-line program that implements DFS and Djikstra's Search algorithm to find the minimum degrees of separation between any two nodes in a graph. Utilized on a graph with more than 400,000 nodes and a million edges",
         authors: ["Angel", "Jeya", "Jenna"],
         date: "Fall Semester 2021",
         url: "https://i.imgur.com/vKg5Nb7.png",
         bgcolor: "#31558C",
-        index: 1
+        index: 2
+    },
+    {
+        name: "Portfolio Website",
+        desc: "A small, modern portfolio website built on a mix of NEXTJS, React, TailwindCSS, and, in the future, Firebase! Deployed on Netlify",
+        authors: ["Angel"],
+        date: "5/2/2022",
+        url: "https://i.imgur.com/k8yFK4K.png",
+        bg: "https://i.imgur.com/nFJT26i.png",
+        bgcolor: "#353935",
+        index:3
     },
     {
         name: "Minesweeper Replica",
@@ -26,9 +46,6 @@ export const projects = [
         url: "https://i.imgur.com/qvwoguP.png",
         bg: "https://i.imgur.com/1xjdmKY.png",
         bgcolor:"#353935",
-        index: 2
-    },
-    {
-
+        index: 4
     }
 ]

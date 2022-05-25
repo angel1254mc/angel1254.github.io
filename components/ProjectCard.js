@@ -2,7 +2,6 @@ import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faYoutubeSquare, faGoogleDrive} from '@fortawesome/free-brands-svg-icons';
-import {Transition} from "@headlessui/react";
 import Link from 'next/link';
 import GetAuthors, {getProjectGithub, getProjectYoutube} from "./tools/UIUtil.js"
 let ProjectCard= ({data}) => {

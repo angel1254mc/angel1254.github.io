@@ -1,6 +1,4 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
-import {Link} from "react-scroll";
 import {projects} from "../data";
 import ProjectCard from "../components/ProjectCard";
 let Projects = ({ Component, pageProps }) => {
@@ -16,6 +14,8 @@ let Projects = ({ Component, pageProps }) => {
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[0]}></ProjectCard></div>
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[1]}></ProjectCard></div>
                 <div className = "flex justify-center align-center"><ProjectCard data = {projects[2]}></ProjectCard></div>
+                <div className = "flex justify-center align-center"><ProjectCard data = {projects[3]}></ProjectCard></div>
+                <div className = "flex justify-center align-center"><ProjectCard data = {projects[4]}></ProjectCard></div>
                 
             </div>
         </div>

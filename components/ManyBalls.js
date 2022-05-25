@@ -1,8 +1,4 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
-import {Link} from "react-scroll";
-import {projects} from "../data";
-import ProjectCard from "../components/ProjectCard";
 let ManyBalls = ({ Component, pageProps }) => {
    
 

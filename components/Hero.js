@@ -1,12 +1,10 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
-import {Link} from "react-scroll";
 import {app, database} from '../firebaseConfig';
 import yellow from '../public/Yellow.svg';
 import Image from 'next/image';
 import red from '../public/Red.svg';
 import blue from '../public/Blue.svg';
-import BBL from '../public/BBLULTRA.png';
+import PROF from '../public/PROFULTRA.png';
 import instagram from '../public/iconinstagram.svg';
 import facebook from '../public/iconfacebook.svg';
 import linkedin from '../public/iconlinkedin.svg';
@@ -50,7 +48,7 @@ let Hero = () => {
                         </div>
                         <div className = "flex m-6 relative overflow-visible">
                             <div className = "bbl hidden md:block top-[30%] left-[40%] md:w-[20rem] md:top-[-20%] md:left-[100%] 2xl:top-[-60%] 2xl:w-[20rem] h-min md:absolute">
-                                <Image src={BBL} layout="responsive"></Image>
+                                <Image src={PROF} layout="responsive"></Image>
                             </div>
                             <div className = "leader-lg text-white text-6xl md:text-8xl">Angel Lopez Pol</div>
                         </div>

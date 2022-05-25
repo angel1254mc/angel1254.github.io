@@ -1,6 +1,4 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
-import {Link} from "react-scroll";
 import {app, database} from '../firebaseConfig';
 import yellow from '../public/Yellow.svg';
 import Image from 'next/image';
@@ -41,7 +39,8 @@ let HeroAbout = () => {
                             I am from <div className=" font-light mt-2" >Bayam&oacute;n, Comer&iacute;o, Carolina, and Aguas Buenas Puerto Rico!</div>
                         </div>
                         <div className = "leader-subtitle ml-5 mt-10 w-full  leader2-lg text-lg md:text-3xl text-white wrap">
-                            I graduated from <div className=" font-light mt-2" >Lake Nona High School, Orlando FL</div>
+                            Education: <div className=" font-light mt-2" >CISE & MAE, University of Florida 2024</div>
+                            <div className=" font-light mt-2" >Lake Nona High School, Orlando FL, 2020 </div>
                         </div>
                         <div className = "leader-subtitle ml-5 mt-10 w-full  leader2-lg text-lg md:text-3xl text-white wrap">
                             I enjoy <div className=" font-light mt-2" >Games, Memes, LoFi Beats, Coffee, </div>

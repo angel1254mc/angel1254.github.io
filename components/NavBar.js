@@ -1,5 +1,4 @@
 import React from 'react';
-import {Transition} from "@headlessui/react";
 import { Link as LinkS, animateScroll as scroll } from "react-scroll";
 import Link from 'next/link';
 import {useRouter} from 'next/router';
