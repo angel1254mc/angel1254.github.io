@@ -2,6 +2,21 @@
   padding: 0 2rem;
 }
 
+/* ...or add this class to an element */
+.container_backdrop {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0) 18.4%, transparent 18.4%),
+    radial-gradient(rgb(0, 0, 0) 18.4%, transparent 18.4%);
+  background-position: 0px 0px, 8px 8px;
+  background-size: 16px 16px;
+  background-color: rgb(31, 31, 31);
+  width: 100vw;
+}
+.container_foreground {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 24%, rgba(255,130,63,0) 100%);
+  width: 100vw;
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -113,4 +128,21 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.styles_project_header {
+  width: 100vw;
 }

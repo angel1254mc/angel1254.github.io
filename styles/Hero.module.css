@@ -1,0 +1,180 @@
+.hero_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y:visible;
+    position: relative;
+}
+.planets {
+    position:absolute;
+    min-width: 20vw;
+    width: 50vh;
+    max-width:100vw;
+    position: relative;
+}
+.planet_1_inner {
+    border-radius: 4000px;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    
+    background: radial-gradient(70.91% 70.91% at 10.8% 73.17%, #8B0000 0%, #872B12 55.47%, #DE6A29 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    background-size: 200% 200%;
+    position: absolute;
+    animation: rotatePlanet 8s infinite;
+}
+.planet_1_ring {
+    border: 10px dashed white;
+    
+    height: 500px;
+    width: 500px;
+    left: -100px;
+    top: -100px;
+    border-radius: 10000px;
+    position: relative;
+    transform: rotateX(70deg) rotateY(20deg);
+    animation: rotateDisk 8s infinite;
+}
+.greenPlanet {
+    stroke-dasharray: 1010;
+    opacity: 0;
+    stroke-dashoffset: 1010;
+    animation-duration: 0.4s, 1s;
+    animation-name: fadeIn, strokeOffset;
+    animation-delay: 2s, 2.4s;
+    animation-iteration-count: 2, 1, 5;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: ease-in, linear
+}
+.yellowPlanet {
+    opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1010;
+    animation-duration: 0.4s, 1s;
+    animation-name: fadeIn, strokeOffset;
+    animation-delay: 2.2s, 2.5s;
+    animation-iteration-count: 2, 1, 5;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: ease-in, linear
+}
+.orangePlanet {
+    opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-duration: 0.4s, 1s;
+    animation-name: fadeIn, strokeOffset;
+    animation-delay: 2.4s, 2.6s;
+    animation-iteration-count: 2, 1;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: ease-in, linear
+}
+.purplePlanet {
+    opacity: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation-duration: 0.4s, 1s;
+    animation-name: fadeIn, strokeOffset;
+    animation-delay: 2.6s, 2.8s;
+    animation-iteration-count: 2, 1, 5;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, 1;
+    animation-timing-function: ease-in, linear
+}
+.planetRing {
+    stroke-dasharray: 300;
+    animation-fill-mode: both;
+    animation: ringOffset 10s infinite ease-out alternate;
+
+}
+.planet_center_div {
+    display: flex;
+    position: absolute;
+}
+.strikeThrough {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: strikeThroughPlanets 0.4s ease-in forwards;
+}
+.moveUp_Header {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    top: 80vh;
+    padding-top: 200px;
+    padding-left: 15%;
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: slideUp;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+@keyframes strokeOffset {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes strikeThroughPlanets {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ringOffset {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 2000;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes rotateDisk {
+    from {
+        transform: rotateX(70deg) rotateY(20deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateX(70deg) rotateY(20deg) rotateZ(360deg);
+    }
+}
+/* Ellipse 1 */
+/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+@keyframes rotatePlanet {
+    25%, 75% {
+        background-position: bottom right;
+    }
+    0%, 50%, 100%{
+        background-position: top left;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 80vh;
+    }
+    to {
+        top: 0vh;
+    }
+}
